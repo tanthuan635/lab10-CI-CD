@@ -16,7 +16,7 @@
 - Tên Jenkins job: `React_Build_Deploy`
 - Hình thức Jenkins: dịch vụ Windows chạy bằng `LocalSystem`, không dùng tài khoản dịch vụ riêng
 - Nhánh triển khai: `main`
-- Thư mục triển khai: `D:\WebServer\ReactApp`
+- Thư mục triển khai: `C:\JenkinsDeploy\ReactApp`
 
 Tên file Word nộp theo đề: `2311554901_NguyenTanThuan.docx`.
 

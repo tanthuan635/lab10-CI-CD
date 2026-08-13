@@ -19,12 +19,12 @@ pipeline {
         )
         string(
             name: 'DEPLOY_DIR',
-            defaultValue: 'D:\\WebServer\\ReactApp',
+            defaultValue: 'C:\\JenkinsDeploy\\ReactApp',
             description: 'Absolute directory served by the web server.'
         )
         string(
             name: 'BACKUP_DIR',
-            defaultValue: 'D:\\WebServer\\Backups',
+            defaultValue: 'C:\\JenkinsDeploy\\Backups',
             description: 'Absolute directory in which timestamped backups are kept.'
         )
     }

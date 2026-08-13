@@ -72,8 +72,8 @@ if not defined SOURCE_ARG if exist "%PROJECT_ROOT%\dist\index.html" set "SOURCE_
 :source_ready
 if not defined TARGET_ARG set "TARGET_ARG=%DEPLOY_DIR%"
 if not defined BACKUP_ARG set "BACKUP_ARG=%BACKUP_DIR%"
-if not defined TARGET_ARG set "TARGET_ARG=D:\WebServer\ReactApp"
-if not defined BACKUP_ARG set "BACKUP_ARG=D:\WebServer\Backups"
+if not defined TARGET_ARG set "TARGET_ARG=C:\JenkinsDeploy\ReactApp"
+if not defined BACKUP_ARG set "BACKUP_ARG=C:\JenkinsDeploy\Backups"
 
 if not defined SOURCE_ARG goto :missing_source
 if not defined TARGET_ARG goto :missing_target

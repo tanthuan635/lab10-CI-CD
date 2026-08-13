@@ -39,9 +39,9 @@ Jenkinsfile dùng agent khả dụng trên máy cục bộ và kiểm tra để 
 Tài khoản dịch vụ Jenkins phải có quyền Modify trên đúng hai thư mục deploy và backup. Ví dụ, chạy PowerShell bằng quyền quản trị và thay tài khoản/path cho phù hợp:
 
 ```powershell
-New-Item -ItemType Directory -Force 'D:\WebServer\ReactApp'
-New-Item -ItemType Directory -Force 'D:\WebServer\Backups'
-icacls 'D:\WebServer' /grant 'NT AUTHORITY\SYSTEM:(OI)(CI)M' /T
+New-Item -ItemType Directory -Force 'C:\JenkinsDeploy\ReactApp'
+New-Item -ItemType Directory -Force 'C:\JenkinsDeploy\Backups'
+icacls 'C:\JenkinsDeploy' /grant 'NT AUTHORITY\SYSTEM:(OI)(CI)M' /T
 ```
 
 Máy thực hiện bài này chọn chạy dịch vụ Jenkins bằng `LocalSystem`, nên ví dụ cấp
@@ -62,14 +62,14 @@ quản trị được tạo trong giao diện web Jenkins sau khi mở khóa l�
 6. Trong **Build Steps**, thêm **Execute Windows batch command**:
 
 ```bat
-set "DEPLOY_DIR=D:\WebServer\ReactApp"
-set "BACKUP_DIR=D:\WebServer\Backups"
+set "DEPLOY_DIR=C:\JenkinsDeploy\ReactApp"
+set "BACKUP_DIR=C:\JenkinsDeploy\Backups"
 call "%WORKSPACE%\scripts\deploy.bat"
 ```
 
-Lệnh trên tự chạy `npm ci`, kiểm thử, build, backup và deploy. Nếu giảng viên yêu
-cầu đúng đường dẫn trong PDF, sao chép `scripts\deploy.bat` sang
-`D:\scripts\deploy.bat`, rồi thay dòng cuối bằng `call D:\scripts\deploy.bat`.
+Lệnh trên tự chạy `npm ci`, kiểm thử, build, backup và deploy. PDF dùng ổ `D:` làm
+ví dụ, nhưng máy thực hiện bài không có ổ này nên dự án dùng
+`C:\JenkinsDeploy` và gọi script trực tiếp từ Jenkins workspace.
 
 ### Cách B — Pipeline bằng Jenkinsfile (bổ sung)
 
@@ -125,7 +125,7 @@ scripts\deploy.bat
 Hoặc chỉ deploy một build đã có vào đường dẫn tùy chỉnh:
 
 ```bat
-scripts\deploy.bat "%CD%\build" "D:\WebServer\ReactApp" "D:\WebServer\Backups"
+scripts\deploy.bat "%CD%\build" "C:\JenkinsDeploy\ReactApp" "C:\JenkinsDeploy\Backups"
 ```
 
 Khi deploy lỗi, Jenkins dừng ngay; nếu trước đó có dữ liệu, log sẽ chỉ rõ thư mục backup để khôi phục thủ công.
