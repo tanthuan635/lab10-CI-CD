@@ -44,7 +44,9 @@ New-Item -ItemType Directory -Force 'D:\WebServer\Backups'
 icacls 'D:\WebServer' /grant 'NT AUTHORITY\SYSTEM:(OI)(CI)M' /T
 ```
 
-Ví dụ trên chỉ đúng khi Jenkins chạy bằng `LocalSystem`. Nếu dịch vụ dùng một tài khoản khác, cấp quyền cho chính tài khoản đó.
+Máy thực hiện bài này chọn chạy dịch vụ Jenkins bằng `LocalSystem`, nên ví dụ cấp
+quyền trên phù hợp. Đây là tài khoản chạy dịch vụ Windows, tách biệt với tài khoản
+quản trị được tạo trong giao diện web Jenkins sau khi mở khóa lần đầu.
 
 ## 3. Tạo Jenkins job
 

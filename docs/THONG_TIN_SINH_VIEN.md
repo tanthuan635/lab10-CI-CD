@@ -7,14 +7,14 @@
 | Họ và tên | Nguyễn Tấn Thuận |
 | Mã số sinh viên | 2311554901 |
 | Tài khoản GitHub | `tanthuan635` |
-| Jenkins | Chạy local tại `http://localhost:8080`, không sử dụng tài khoản Jenkins riêng |
+| Jenkins | Chạy local tại `http://localhost:8080` bằng Windows `LocalSystem`, không dùng tài khoản dịch vụ riêng |
 | Công việc thực hiện | Tạo ứng dụng React; cấu hình GitHub, ngrok và Jenkins; viết quy trình build, test, backup và deploy |
 
 ## Minh chứng cá nhân
 
 - URL repository GitHub: `https://github.com/tanthuan635/lab10-CI-CD`
 - Tên Jenkins job: `React_Build_Deploy`
-- Hình thức Jenkins: chạy local, không dùng tài khoản Jenkins riêng
+- Hình thức Jenkins: dịch vụ Windows chạy bằng `LocalSystem`, không dùng tài khoản dịch vụ riêng
 - Nhánh triển khai: `main`
 - Thư mục triển khai: `D:\WebServer\ReactApp`
 

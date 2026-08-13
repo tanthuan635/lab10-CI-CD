@@ -45,8 +45,8 @@ Sau khi build, bản production nằm trong `build/`.
 3. Chụp Console Output của lần build thành công và màn hình thư mục triển khai.
 
 Bài này được chuẩn bị theo hình thức **cá nhân (01 sinh viên thực hiện)**.
-Jenkins chạy local tại `http://localhost:8080`, không sử dụng tài khoản Jenkins
-riêng; tài khoản GitHub thực hiện bài là `tanthuan635`.
+Jenkins chạy local tại `http://localhost:8080` bằng Windows `LocalSystem`, không
+dùng tài khoản dịch vụ riêng; tài khoản GitHub thực hiện bài là `tanthuan635`.
 
 Lưu ý: đề mang tên **Bài thực hành 10** nhưng phần nộp bài ghi đường dẫn `Lab9`.
 Nên xác nhận lại đường dẫn với giảng viên trước khi nộp.
