@@ -40,11 +40,13 @@ Sau khi build, bản production nằm trong `build/`.
 
 1. Repository đã cấu hình: `https://github.com/tanthuan635/lab10-CI-CD.git` trên
    nhánh `main`.
-2. Điền họ tên, MSSV và tài khoản cá nhân đã sử dụng vào mẫu trong
-   `docs/THONG_TIN_SINH_VIEN.md`, sau đó lưu thành file Word theo định dạng đề yêu cầu.
+2. Thông tin cá nhân đã điền trong `docs/THONG_TIN_SINH_VIEN.md`; file Word nộp bài
+   đã được tạo với tên `2311554901_NguyenTanThuan.docx`.
 3. Chụp Console Output của lần build thành công và màn hình thư mục triển khai.
 
 Bài này được chuẩn bị theo hình thức **cá nhân (01 sinh viên thực hiện)**.
+Jenkins chạy local tại `http://localhost:8080`, không sử dụng tài khoản Jenkins
+riêng; tài khoản GitHub thực hiện bài là `tanthuan635`.
 
 Lưu ý: đề mang tên **Bài thực hành 10** nhưng phần nộp bài ghi đường dẫn `Lab9`.
 Nên xác nhận lại đường dẫn với giảng viên trước khi nộp.

@@ -4,19 +4,20 @@
 
 | Thông tin | Nội dung |
 | --- | --- |
-| Họ và tên | Điền họ tên của bạn |
-| Mã số sinh viên | Điền MSSV của bạn |
+| Họ và tên | Nguyễn Tấn Thuận |
+| Mã số sinh viên | 2311554901 |
 | Tài khoản GitHub | `tanthuan635` |
-| Tài khoản Jenkins | Tài khoản Jenkins dùng trên máy thực hành |
+| Jenkins | Chạy local tại `http://localhost:8080`, không sử dụng tài khoản Jenkins riêng |
 | Công việc thực hiện | Tạo ứng dụng React; cấu hình GitHub, ngrok và Jenkins; viết quy trình build, test, backup và deploy |
 
 ## Minh chứng cá nhân
 
 - URL repository GitHub: `https://github.com/tanthuan635/lab10-CI-CD`
 - Tên Jenkins job: `React_Build_Deploy`
+- Hình thức Jenkins: chạy local, không dùng tài khoản Jenkins riêng
 - Nhánh triển khai: `main`
 - Thư mục triển khai: `D:\WebServer\ReactApp`
 
-Tên file Word nộp theo đề: `MSSV_HoTen.docx`.
+Tên file Word nộp theo đề: `2311554901_NguyenTanThuan.docx`.
 
 Đường dẫn trong đề: `N:\#Mã_Lớp\Lab9\` (cần xác nhận vì tiêu đề đề là Lab 10).
