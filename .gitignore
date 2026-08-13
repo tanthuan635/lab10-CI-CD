@@ -1,0 +1,11 @@
+node_modules/
+build/
+.vite/
+coverage/
+.env
+.env.local
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
